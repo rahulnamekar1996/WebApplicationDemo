@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewData["Title"] = "EmployeeDetails";
+}
+
+<h1>EmployeeDetails</h1>
+<td>
+
+</td>
+
+
+
+
+
+<form asp-action="EmployeeDetails">
+    <table class="table">
+        <tr>
+            <td>
+                Employee Name
+            </td>
+            <td>
+                @Html.TextBox("Employeename")
+            </td>
+        </tr>
+
+            <td>
+            Middle Name
+            </td>
+            <td>
+            @Html.TextBox("MiddleName")
+            </td>
+        </tr>
+        </tr>
+      
+            <td>
+                Sir Name
+            </td>
+            <td>
+                @Html.TextBox("SirName")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                @Html.TextBox("email")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select Gender
+            </td>
+            <td>
+                @Html.RadioButton("gender", "Male") Male
+                @Html.RadioButton("gender", "Female") Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select City
+            </td>
+            <td>
+                @Html.DropDownList("cities")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select Deaprtment
+            </td>
+            <td>
+                @Html.DropDownList("Department")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Employee Salary
+            </td>
+            <td>
+                @Html.TextBox("EmployeeSalary")
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </td>
+        </tr>
+    </table>
+</form>
